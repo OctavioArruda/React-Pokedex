@@ -9,3 +9,7 @@
 .navbar {
     background-color: #545454 !important;
 }
+
+span, h4 {
+    text-transform: capitalize;
+}
