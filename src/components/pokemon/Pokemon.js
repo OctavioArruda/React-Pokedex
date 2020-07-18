@@ -71,9 +71,11 @@ export default class Pokemon extends Component {
                 break;            
                 case 'speed': speed = stat['base_stat'];
                 break;            
-                case 'specialAttack': specialAttack = stat['base_stat'];
+                case 'special-attack': specialAttack = stat['base_stat'];
                 break;            
-                case 'specialDefense': specialDefense = stat['base_stat'];
+                case 'special-defense': specialDefense = stat['base_stat'];
+                break;
+                default: 
                 break;
             }
         });  
