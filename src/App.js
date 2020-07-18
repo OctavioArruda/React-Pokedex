@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -10,12 +11,14 @@ import Dashboard from './components/layout/Dashboard';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <NavBar />
-        <div className="container">
-          <Dashboard />
-        </div>
-      </div>    
+      <Router>
+        <div className="App">
+          <NavBar />
+          <div className="container">
+            <Dashboard />
+          </div>
+        </div>  
+      </Router>  
     );
   }
 }
